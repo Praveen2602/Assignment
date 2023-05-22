@@ -1,0 +1,25 @@
+1.What is HTML?
+ HTML (HyperText Markup Language) is a language used to create and structure content
+on the web.
+  a. HTML is an essential building block of the web
+  b. HTML is widely used
+  c. HTML is easy to learn
+  d. HTML is versatile
+2.What is CSS
+  CSS (Cascading Style Sheets) is a stylesheet language used to describe the
+look and formatting of a document written in HTML. It is used to define the
+styles of elements on a web page, such as the font, color, size, and layout of
+text and other elements.
+3. Why did Javascript came into the picture.
+   ● JavaScript is a programming language that is used to make websites more
+interactive.
+● JavaScript is an essential tool for front-end web development, and it is also
+used on the back end of a web application.
+● It is a popular and widely used language to build a wide range of
+applications, including mobile apps, desktop apps, and games.
+4. History of Javascript d Ecmacript. Explain in your own words.
+    JavaScript was designed to be a lightweight, easy-to-learn programming
+language that could be used to add interactivity to web pages. It was originally
+developed by Netscape, and it was quickly adopted by other web browsers. Today,
+JavaScript is one of the most popular programming languages in the world, and it
+is used on almost every modern web page.
