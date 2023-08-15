@@ -1,0 +1,95 @@
+Q.1) What is a DataBase. Expain with an example on why should we need a dataBase?
+ ans->  Database is a collection of interrelatd data  and a set of program to access those data.
+         The collection data is usually referred to as database.
+       Need-- The primary Goal of DBMS is to provide a way to store data and retreive database information
+            that is both convinient and efficient.  
+ 
+Q.2) Write a short note on File base storage system. Explain the major challenges on a File-based storage system?
+ ans-->The systems that are used to organize and maintain data files are known as file based data systems. 
+       These file systems are used to handle a single or multiple files and are not very efficient. 
+     FUNTIONALITIES-- The functionalities of a File-based Data Management System are as follows −
+
+                      ** A file based system helps in basic data management for any user.
+                      **The data stored in the file based system should remain consistent.
+                      **Any transactions done in the file based system should not alter the consistency property.
+                          The file based system should not allow any illegal or potentially hazardous operations to occur on the data.  
+
+     CHALLENGES---**The File based system is limited to a smaller size and cannot store large amounts of data.
+                  **This system is relatively uncomplicated but this means it cannot support complicated queries, data recovery etc.
+                  **There may be redundant data in the file based system as it does not have a complex mechanism to get rid of it.
+                  **The data is not very secure in a file based system and may be corrupted or destroyed.
+                  **The data files in the file based system may be stored across multiple locations. Consequently, it is difficult to share the data easily with multiple users.                     
+Q.3) What is DBMS? What was the need for DBMS?
+ ans-->Database is a collection of interrelatd data  and a set of program to access those data.
+         The collection data is usually referred to as database.
+       Need-- The primary Goal of DBMS is to provide a way to store data and retreive database information
+            that is both convinient and efficient.
+Q.4) Explain  5 challenges on file-based storage system which was tackled by DBMS.
+ ans--> a)Data security: A file system provides a password mechanism to protect the database but how long can the password be protected? 
+                       No one can guarantee that.  This doesn’t happen in the case of DBMS. 
+                       DBMS has specialized features that help provide shielding to its data. 
+        b)Data redundancy and inconsistency: Redundancy is the concept of repetition of data i.e. each data may have more than a single copy. 
+                                            The file system cannot control the redundancy of data as each user defines and maintains the needed files for a specific application to run.
+                                            There may be a possibility that two users are maintaining the data of the same file for different applications.
+                                            Hence changes made by one user do not reflect in files used by second users, which leads to inconsistency of data. 
+                                            Whereas DBMS controls redundancy by maintaining a single repository of data that is defined once and is accessed by many users. 
+                                         As there is no or less redundancy, data remains consistent.
+        c)Data concurrency: Concurrent access to data means more than one user is accessing the same data at the same time. 
+                            Anomalies occur when changes made by one user get lost because of changes made by another user.
+                            The file system does not provide any procedure to stop anomalies. Whereas DBMS provides a locking system to stop anomalies to occur.                 
+        d)Data searching: For every search operation performed on the file system, a different application program has to be written. While DBMS provides inbuilt searching operations. 
+                          The user only has to write a small query to retrieve data from the database.
+        e)Data integrity: There may be cases when some constraints need to be applied to the data before inserting it into the database. The file system does not provide any procedure to check these constraints automatically. 
+                          Whereas DBMS maintains data integrity by enforcing user-defined constraints on data by itself.                                                                  
+Q.5 list out the different types of classification in DBMS and explain them in depth?
+ ans--> Here are a few examples of classification systems:
+       1)Data model==>A data model is a representation of structured data, usually in the form of a diagram or computer language. It is used to represent and organize data, as well as to facilitate communication between different stakeholders.
+                     Data models are used to describe the structure, relationships, and constraints of data elements within the system. They can also be used to determine how data should be stored, accessed, and transformed to support the system’s requirements.
+                     In addition, data models help identify and document data requirements and provide a basis for developing applications and databases. The relational model uses tables to store data in a structured way and is the most common form of a database.
+                     It is used by popular DBMSs such as Oracle, Microsoft SQL Server, and IBM DB2. The object-oriented model stores data in objects and classes and is used by DBMSs such as Object Store and Objectivity/DB. The hierarchical model uses a parent-child relationship to store data. It is used by DBMSs such as IBM IMS and IBM IDMS.
+
+       2)Relational DBMS==>A relational database management system (RDBMS) is a type of database management system (DBMS) that stores data in the form of related tables. The data is organized into rows, columns, and tables, and it is indexed to make it easier to find relevant information.
+                           RDBMSs are the most commonly used DBMSs, and they are used in a wide variety of applications, from banking systems to retail websites.
+                           RDBMSs are also used to manage large amounts of data, such as customer information, inventory data, and financial records. The main advantage of an RDBMS is that it allows users to quickly and easily access data from multiple tables.
+                          Additionally, because the data is organized in a structured way, it is easier to update and maintain. Examples of relational DBMS include Oracle, MySQL, and Microsoft SQL Server.
+
+       3)Object-oriented DBMS==>Object-oriented DBMS (OODBMS) is a type of database management system that is built around the concept of objects. An object-oriented database stores data in the form of objects, which are pieces of information that contain data as well as associated methods or procedures.
+                                Objects are not just pieces of data but are also defined by their associated procedures, which allow them to interact with other objects in the database. Object-oriented DBMSs include Oracle, DB2, Informix, and PostgreSQL. Examples of object-oriented DBMS include MongoDB and Apache Cassandra.
+
+       4)Hierarchical DBMS==>A hierarchical database management system (HDBMS) is a type of database management system (DBMS) based on the hierarchical model, which is a data model that organizes data elements in a tree-like structure.
+                             The hierarchical model organizes data elements in a tree-like structure, with each element having one parent and multiple children.
+                              The hierarchical model is used for representing data in a tree-like structure, where each node in the tree has a single parent, and each parent can have multiple children.
+                            HDBMSs are used in a variety of applications, such as document management systems, geographical information systems, and corporate data warehouses.
+                            Examples of hierarchical DBMS include IBM’s Information Management System (IMS) and Integrated Data Store (IDS).  
+       5) Network Databases==>It is the database that typically follows the network data model. Here, the representation of data is in the form of nodes connected via links between them. Unlike the hierarchical database,
+                                it allows each record to have multiple children and parent nodes to form a generalized graph structure
+                                          
+Q.6) What is the significance of Data modelling and explain the types of data modlling?
+ans-->Data modeling (data modelling) is the process of creating a data model for the data to be stored in a database. 
+This data model is a conceptual representation of Data objects, the associations between different data objects, and the rules.
+
+ Data modeling helps in the visual representation of data and enforces business rules, regulatory compliances, and government policies on the data.
+ Data Models ensure consistency in naming conventions, default values, semantics, security while ensuring quality of the data.
+     ==Types of Data Models in DBMS==
+        Types of Data Models: There are mainly three different types of data models: conceptual data models, logical data models, and physical data models, and each one has a specific purpose. The data models are used to represent the data and how it is stored in the database and to set the relationship between data items.
+
+            1.Conceptual Data Model: This Data Model defines WHAT the system contains. This model is typically created by Business stakeholders and Data Architects. The purpose is to organize, scope and define business concepts and rules.
+            2.Logical Data Model: Defines HOW the system should be implemented regardless of the DBMS. This model is typically created by Data Architects and Business Analysts. The purpose is to developed technical map of rules and data structures.
+            3.Physical Data Model: This Data Model describes HOW the system will be implemented using a specific DBMS system. This model is typically created by DBA and developers. The purpose is actual implementation of the database.
+ Q.7)Explain 3 schema architecture along with its advantages.
+ ans--> In database management system (DBMS), schema refers to the logical aspect or logical structure of the Database, which tells us about how data is stored and accessed. Architecture refers to the overall design and organization of the database. The three schema architecture separates the logical and physical aspects of the DBMS. This allows changing one layer of the database without affecting the other layers. It also helps to maintain data integrity and consistency.
+
+The three layers of a three-schema architecture are:
+
+1.External layer 
+2.Conceptual layer
+3.Internal layer 
+
+ Advantages===>
+ 1.There are several benefits to using a three-schema architecture in DBMS. Some of these benefits include:
+
+2.One of the main advantages of a DBMS's three schemas is its data independence. All three layers are distinct from each other. So we can make changes to one layer without affecting other layers.
+ 
+3.Each schema can scale independently, which can enhance the performance of the database and manage more traffic at the same time.
+ 
+4. It is simpler to maintain and change each layer individually in a three-schema design due to the separation of the layers.
