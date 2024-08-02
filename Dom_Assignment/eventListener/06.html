@@ -1,0 +1,28 @@
+6. Keydown and Keyup Event Listener (Detect Shift Key Press):
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keydown & Keyup Example</title>
+</head>
+<body>
+    <p id="shiftStatus">Press and hold the Shift key.</p>
+
+    <script>
+        const shiftStatus = document.getElementById('shiftStatus');
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === "Shift") {
+                shiftStatus.textContent = "Shift key is being held down!";
+            }
+        });
+
+        document.addEventListener('keyup', (event) => {
+            if (event.key === "Shift") {
+                shiftStatus.textContent = "Shift key is released!";
+            }
+        });
+    </script>
+</body>
+</html>

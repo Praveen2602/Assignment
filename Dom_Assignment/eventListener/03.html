@@ -1,0 +1,26 @@
+3. Mouseover Event Listener (Hover to Show Tooltip):
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Example</title>
+</head>
+<body>
+    <button id="hoverButton">Hover over me</button>
+    <p id="tooltip" style="visibility: hidden;">This is a tooltip</p>
+
+    <script>
+        const button = document.getElementById('hoverButton');
+        const tooltip = document.getElementById('tooltip');
+
+        button.addEventListener('mouseover', () => {
+            tooltip.style.visibility = 'visible';
+        });
+
+        button.addEventListener('mouseout', () => {
+            tooltip.style.visibility = 'hidden';
+        });
+    </script>
+</body>
+</html>

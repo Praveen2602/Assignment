@@ -1,0 +1,20 @@
+4. Mouseout Event Listener (Mouse out to Change Image):
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseout Example</title>
+</head>
+<body>
+    <img id="image" src="https://via.placeholder.com/150" alt="Placeholder Image" />
+
+    <script>
+        const image = document.getElementById('image');
+
+        image.addEventListener('mouseout', () => {
+            image.src = 'https://via.placeholder.com/150/FF0000/FFFFFF?text=Changed!';
+        });
+    </script>
+</body>
+</html>
